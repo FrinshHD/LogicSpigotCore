@@ -11,7 +11,6 @@ import java.util.HashMap;
 
 public class PlayerHashMap<K, V> extends HashMap<K, V> implements Listener {
 
-
     public PlayerHashMap() {
         LogicSpigotCoreMain.getInstance().getServer().getPluginManager().registerEvents(this, LogicSpigotCoreMain.getInstance());
     }
