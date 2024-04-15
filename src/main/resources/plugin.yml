@@ -1,4 +1,0 @@
-name: LogicSpigotCoreMain
-version: '${project.version}'
-main: de.frinshhd.logicspigotcore.LogicSpigotCoreMain
-api-version: '1.20'
