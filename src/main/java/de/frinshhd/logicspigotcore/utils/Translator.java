@@ -15,11 +15,11 @@ public class Translator {
 
     public static Properties messages;
 
-    public static void register(String path) throws IOException {
+    public static void register(InputStreamReader defaultFile, String path) throws IOException {
         messages = new Properties();
 
         //load standard configuration
-        try (InputStreamReader isr = new InputStreamReader(Objects.requireNonNull(LogicSpigotCoreMain.class.getClassLoader().getResourceAsStream("messages.properties")), StandardCharsets.UTF_8)) {
+        try (InputStreamReader isr = defaultFile) {
             messages.load(isr);
         } catch (IOException e) {
             LogicSpigotCoreMain.getInstance().getLogger().severe(ChatColor.RED + "An error occurred while reading messages.properties. AnturniaQuests will be disabled!\nError " + e.getMessage());
