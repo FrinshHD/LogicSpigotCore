@@ -20,7 +20,7 @@ public final class LogicSpigotCoreMain {
     }
 
 
-    public void onEnable(JavaPlugin instance) {
+    public static void onEnable(JavaPlugin instance) {
         INSTANCE = instance;
 
         // Find plugin class names for dynamic loading
